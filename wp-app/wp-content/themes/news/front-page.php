@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New</title>
-  <?php
-
-  wp_head();
-  ?>
-</head>
-<body>
-
-</body>
-</html>
+<?php get_header(); ?>
+<main>
+  <section>
+    <div class="container">
+      <div class="wrapper">
+      <?php if (have_posts()):
+        while (have_posts()):
+          the_post(); ?>
+          <h1><?php the_title(); ?></h1>
+          <p><?php the_content(); ?></p>
+        <?php endwhile; ?>
+      <?php endif; ?>
+      </div>
+    </div>
+  </section>
+</main>
+<?php get_footer(); ?>
