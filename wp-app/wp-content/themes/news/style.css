@@ -11,7 +11,6 @@ Text Domain: news
 /* Root, body & html */
 * {
   box-sizing: border-box;
-  font-family: 'Darker Grotesque', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -22,6 +21,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif
 }
 
 /* Header */
@@ -84,11 +84,11 @@ header {
   padding: 60px;
 }
 
-.nav-li {
+li.menu-item {
   margin: 10px 0;
 }
 
-.nav-li a {
+li.menu-item a {
   margin: 1em 0;
   color: azure;
   text-decoration: none;
@@ -141,6 +141,8 @@ header {
   position: relative;
 }
 
+
+
 @media (min-width: 600px) {
   .nav-list {
     position: static;
@@ -168,7 +170,40 @@ header {
 
 /* Front-page */
 
+.post-container {
+  margin: 30px;
+  text-align: center;
+}
 
+.post-title {
+  margin-top: 20px;
+}
+
+.time-frontpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.time-frontpage h1 {
+  font-size: 40px;
+}
+
+.greeting {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 20px 0;
+}
+
+.greeting p {
+  font-size: 16px;
+  margin-top: 10px;
+}
 
 
 

@@ -1,6 +1,9 @@
-<!-- themplate for subsidesvexcept frontpage and home.php -->
+
+<!-- Template Name: Blogg-template -->
+
 <?php get_header(); ?>
 <section>
+  <p>This is a template-page</p>
     <div class="post-container">
       <?php if (have_posts()):
         while (have_posts()):

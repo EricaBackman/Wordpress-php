@@ -1,20 +1,17 @@
+<!-- Frontpage -->
 <?php get_header(); ?>
 <main>
-  <section>
-  <div class="hero-image"></div>
+  <section class="hero-container">
+    <img src="<?php the_post_thumbnail_url("large")?>" alt="">
   </section>
-  <section>
-    <div class="container">
-      <div class="wrapper">
-      <?php if (have_posts()):
-        while (have_posts()):
-          the_post(); ?>
-          <h1 class="post-title"><?php the_title(); ?></h1>
-          <p><?php the_content(); ?></p>
-        <?php endwhile; ?>
-      <?php endif; ?>
-      </div>
-    </div>
+  <section class="time-frontpage">
+    <h1><?php the_title() ?></h1>
+   <?php echo (date("l")) . " " . (date("Y/m/d")) . " " . date("H:i"); ?>
+  </section>
+  <section class="greeting">
+   <div class="front-content">
+    <?php the_content() ?>
+   </div>
   </section>
 </main>
 <?php get_footer(); ?>
