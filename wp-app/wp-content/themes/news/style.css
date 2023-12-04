@@ -92,14 +92,15 @@ li.menu-item a {
   margin: 1em 0;
   color: azure;
   text-decoration: none;
-}
-
-.nav-link {
   transition: 400ms ease;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+/* .nav-link {
+  transition: 400ms ease;
+} */
+
+li.menu-item a:hover,
+li.menu-item a:focus {
   color: rgb(30, 191, 255);
 }
 
@@ -132,14 +133,14 @@ li.menu-item a {
   transition: all 300ms ease-in-out;
 }
 
-.hero-image {
+/* .hero-image {
   background-image: url(assets/img/street-tall.jpg);
   height: 500px;
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
+} */
 
 
 
@@ -158,14 +159,14 @@ li.menu-item a {
     display: none;
   }
 
-  .hero-image {
+  /* .hero-image {
     background-image: url(assets/img/street-wide.png);
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
+  } */
 }
 
 /* Front-page */
